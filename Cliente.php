@@ -1,6 +1,4 @@
 <?php
-// Incluyo la clase Persona
-include_once 'C:/Users/54299/OneDrive/Escritorio/GBritos/Universidad/IPOO/TP2/Persona.php';
 
 // Clase Cliente
 class Cliente{
@@ -87,3 +85,5 @@ function datosCliente(): object{
 
     return $cliente;
 }
+
+?>

@@ -1,5 +1,7 @@
 <?php
 // Incluyo los archivos necesarios
+include_once '../TP1/Fecha.php';
+include_once '../TP2/Persona.php';
 include_once 'Cliente.php';
 include_once 'Moto.php';
 include_once 'Venta.php';

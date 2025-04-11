@@ -117,13 +117,19 @@ class Empresa{
     public function retornarMoto(int $codigoMoto): mixed{
         /*
             $resultado null || object
+            int $i variable contador
         */
+        $i=0;// Declaro e inicializo contador para el bucle
         $resultado = null;
 
-        foreach($this->getColeccionMotos() as $moto){
-            if($moto->getCodigo() == $codigoMoto){
-                $resultado = $moto;
+        while( ( $i < count( $this->getColeccionMotos() ) ) && ( $resultado == null ) ){
+
+            if( $this->getColeccionMotos()[$i]->getCodigo() == $codigoMoto ){
+                $resultado = $this->getColeccionMotos()[$i];
             }
+
+            // Aumento contador
+            $i++;
         }
 
         return $resultado;

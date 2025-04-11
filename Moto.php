@@ -182,3 +182,5 @@ function datosMoto(): object{
 
     return $moto;
 }
+
+?>

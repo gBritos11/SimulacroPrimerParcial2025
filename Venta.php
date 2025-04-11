@@ -1,8 +1,4 @@
 <?php
-// Incluyo a las clases Cliente, Moto y Fecha
-include_once 'Cliente.php';
-include_once 'Moto.php';
-include_once 'C:\Users\54299\OneDrive\Escritorio\GBritos\Universidad\IPOO\TP1\Fecha.php';
 
 // Clase Venta
 class Venta{
@@ -92,7 +88,7 @@ class Venta{
             $motos
         )."\n".
 
-        "Precio final de las motos vendidas -> ".($this->getPrecioVenta() == -1 ? "XXXXXXXXXXXX" : $this->getPrecioVenta()."\n").
+        "Precio final de las motos vendidas -> $".($this->getPrecioVenta() == -1 ? "XXXXXXXXXXXX" : $this->getPrecioVenta()."\n").
         "(con su respectivo interés anual)\n".
         "\n".$this->getCliente();
     }
@@ -119,7 +115,7 @@ class Venta{
             // Si es la primera moto, seteo el precio directamente
             if($this->getPrecioVenta() == -1){
                 $this->setPrecioVenta($precioMoto);
-            }else{
+            }else{// si no es la primera moto, sumo al precio que ya habia
                 $this->setPrecioVenta($this->getPrecioVenta() + $precioMoto);
             }
 
@@ -133,3 +129,5 @@ class Venta{
         return $mensaje;
     }
 }
+
+?>
