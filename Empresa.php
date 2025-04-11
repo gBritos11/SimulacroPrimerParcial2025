@@ -102,7 +102,7 @@ class Empresa{
         "EMPRESA -> ".$this->getNombre()."\n".
         $this->getDireccion()."\n".
         "=== CLIENTES ===\n".$clientes.
-        "=== MOTOS ===\n".$motos.
+        "=== STOCK MOTOS ===\n".$motos.
         "=== VENTAS ===\n".$ventas.
         "----------------------------\n";
     }

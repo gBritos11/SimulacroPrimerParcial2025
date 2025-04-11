@@ -35,10 +35,15 @@ $empresa = new Empresa(
     []
 );
 
+echo "=== STOCK MOTOS  ===\n";
+echo"$moto1\n";
+echo"$moto2\n";
+echo"$moto3\n";
+
 echo "=== REALIZAR VENTAS ===\n";
 
 // 5.
-$ventaTotal = $empresa->registrarVenta([12,13], $cliente2);
+$ventaTotal = $empresa->registrarVenta([11,12,13], $cliente2);
 echo (
         $ventaTotal == -1 ?
         "-XXX- NO SE PUDO COMPLETAR LA VENTA -XXX-\n" :
